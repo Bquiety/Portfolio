@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!--SITE TITLE-->
+        <title>Nick Georgiou Portfolio</title>
+        <meta name="description" content="This is my Portfolio. My skills and experience are displayed throw my projects.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <!-- Open Graph (og) meta tags are not included yet-->
+
+        <!--STYLESHEETS-->
+        <link rel="stylesheet" href="./css/style.css">
+        <!--Cagliostro font family-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cagliostro&display=swap" rel="stylesheet">
+        <!--JAVASCRIPT-->
+        <script type="text/javascript" src="./actions/scroll-effect.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+        <!--Nav Bar-->
+            <nav class="nav" id="nav">
+                <ul class="nav-flex-container">
+                    <li class="flex-item"><a>About</a></li>
+                    <li class="flex-item"><a>Projects</a></li>
+                    <li class="flex-item"><a>Contact Me</a></li>
+                </ul>
+            </nav>
+
+        <!--Section 1-->    
+            <section class="section1">
+                <h1 class="welcome-msg">Hello, you are welcome to stick around and check my projects!!</h1>
+            </section>
+        <!--Section 2-->
+            <section class="section2">
+                <img src="/images/NG.jpeg" alt="my image">
+            </section>
+
+        </div>
+
+    </body>
+    
+</html>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
